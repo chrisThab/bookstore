@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bookstore</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bookstore</title>
+
     <script src="./scripts/script.js"></script>
     <script src="./scripts/library.js"></script>
     <link rel="stylesheet" href="./styles/standard.css">
     <link rel="stylesheet" href="./styles/comment.css">
     <link rel="stylesheet" href="./styles/bookStyle.css">
     <link rel="stylesheet" href="./styles/diverse.css">
+    <link rel="stylesheet" href="./styles/buttons.css">
+
 </head>
-<body>
+
+<body  onload="getOneBook()">
 
     <header>
         <div id="headline">
@@ -19,10 +23,10 @@
             <h1>DA-BOOKSTORE</h1><h2>Your online bookstore</h2>
         </div>
     </header>
-
-    <main>
-        <div id="bookView">
-            <div id="title"><h1>buchtitel</h1></div>
+    
+    <main id="main">
+        <!-- <div id="bookView">
+            <div id="title"><h1></h1></div>
             <img id="imgBook" src="./img/book-bookmark.svg" alt="old book">
             <div id="overview">
                 <div id="aboveInfo">
@@ -37,11 +41,13 @@
                     <tr></tr>
                 </div>
             </div>
-            <input id="newComment" type="text" placeholder="Wie hat es dir gefallen?"></input>
-            <button id="sendComment"><img class="paperplane" src="./img/paper-plane.svg" alt="paperplane"></button>
-        </div>
+            <div id="commentSection">      
+                <input id="newComment" type="text" placeholder="  Wie hat es dir gefallen?"></input>
+                <button id="sendComment"><img class="paperplane" src="./img/paper-plane.svg"    alt="paperplane"></button>
+            </div>            
+        </div> -->
     </main>
-
+    
     <footer></footer>
     
 </body>

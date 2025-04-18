@@ -1,11 +1,30 @@
+#commentSection{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "a a a a b";
+    gap: 16px;
+}
+
+#newComment{
+    height: 26px;
+    grid-area: a;
+    border-radius: 8px;
+    background-color: #124758;
+    border: 1px solid;
+}
+
 #sendComment{
-    width: 24px;
-    height: 24px;
-    object-fit: cover;
+    width: 32px;
+    height: 32px;
+    padding: 0px;
+    grid-area: b;
+    border-radius: 8px;
+    background-color: #124758;
+    border: 1px solid;
 }
 
 .paperplane{
-    height: 24px;
-    width: 24px;
-    color: white;
+    height: 32px;
+    width: 32px;
+    object-fit: contain;
 }
