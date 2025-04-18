@@ -7,32 +7,38 @@
     <script src="./scripts/script.js"></script>
     <script src="./scripts/library.js"></script>
     <link rel="stylesheet" href="./styles/standard.css">
+    <link rel="stylesheet" href="./styles/comment.css">
+    <link rel="stylesheet" href="./styles/bookStyle.css">
+    <link rel="stylesheet" href="./styles/diverse.css">
 </head>
 <body>
 
     <header>
-        <div>
-            <img src="" alt="open book">
-            <h1></h1><h2></h2>
+        <div id="headline">
+            <img src="./img/book-open.svg" alt="open book">
+            <h1>DA-BOOKSTORE</h1><h2>Your online bookstore</h2>
         </div>
     </header>
 
     <main>
         <div id="bookView">
             <div id="title"><h1>buchtitel</h1></div>
-            <img id="imgBook" src="" alt="old book">
+            <img id="imgBook" src="./img/book-bookmark.svg" alt="old book">
             <div id="overview">
                 <div id="aboveInfo">
                     <div id="priceTag">€</div>
                     <div id="likeIt">
                         <p>count</p>
-                        <button id="" onclick=""><img src="" alt="heart"></button>
+                        <button id="likeButton" onclick=""><img src="" alt="heart"></button>
                     </div>
                 </div>
-                <div id="info"></div>
+                <div id="info">
+                    <th>Kommentare:</th>
+                    <tr></tr>
+                </div>
             </div>
-            <div id="comments"></div>
-            <div id="newComment"></div>
+            <input id="newComment" type="text" placeholder="Wie hat es dir gefallen?"></input>
+            <button id="sendComment"><img class="paperplane" src="./img/paper-plane.svg" alt="paperplane"></button>
         </div>
     </main>
 
